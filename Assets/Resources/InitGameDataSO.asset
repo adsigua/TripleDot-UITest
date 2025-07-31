@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149fa19f0bfb8264fb01e7d802cffa9b, type: 3}
+  m_Name: InitGameDataSO
+  m_EditorClassIdentifier: 
+  moneyCount: 300
+  livesCount: 5
+  maxLivesCount: 5
+  starCount: 8
+  footerButtonsUnlockStates: 0001010100
+  soundOn: 1
+  musicOn: 1
+  vibrationOn: 1
+  notifsOn: 1
+  languageIndex: 0

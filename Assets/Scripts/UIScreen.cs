@@ -1,16 +1,32 @@
 using UnityEngine;
 
-public class UIScreen : MonoBehaviour
+public abstract class UIScreen : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         
     }
+
+    public virtual void InitScreen(UIScreenInitData uiScreenInitData)
+    {
+        
+    }
+
+    public virtual void ShowScreen()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public virtual void HideScreen()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public abstract void RegisterEventsListener<T>(T objectListener) where T : class;
+    public abstract void UnregisterEventsListener<T>(T objectListener) where T : class;
 }
