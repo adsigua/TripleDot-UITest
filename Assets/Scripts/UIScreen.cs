@@ -2,6 +2,8 @@ using UnityEngine;
 
 public abstract class UIScreen : MonoBehaviour
 {
+    public bool isShown { get; private set; } = false;
+
     protected virtual void Start()
     {
         
@@ -20,11 +22,13 @@ public abstract class UIScreen : MonoBehaviour
     public virtual void ShowScreen()
     {
         gameObject.SetActive(true);
+        isShown = true;
     }
 
     public virtual void HideScreen()
     {
         gameObject.SetActive(false);
+        isShown = false;
     }
 
     public abstract void RegisterEventsListener<T>(T objectListener) where T : class;

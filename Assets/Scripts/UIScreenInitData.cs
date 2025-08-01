@@ -11,7 +11,7 @@ public class UIHomeScreenInitData : UIScreenInitData
     public int livesCount;
     public int maxLivesCount;
     public int starCount;
-    public bool[] footerButtonsUnlockeStates;
+    public bool[] footerButtonsLockStates;
 
     public void InitData()
     {
@@ -19,16 +19,16 @@ public class UIHomeScreenInitData : UIScreenInitData
         livesCount = 5;
         maxLivesCount = 5;
         starCount = 8;
-        footerButtonsUnlockeStates = new bool[] {false, true, true, true, false};
+        footerButtonsLockStates = new bool[] {true, false, false, false, true};
     }
     
     public void SetDataFromSO(InitGameDataSO initGameDataSo)
     {
-        moneyCount = initGameDataSo.moneyCount;
+        moneyCount = initGameDataSo.coinsCount;
         livesCount = initGameDataSo.livesCount;
         maxLivesCount = initGameDataSo.maxLivesCount;
         starCount = initGameDataSo.starCount;
-        footerButtonsUnlockeStates = initGameDataSo.footerButtonsUnlockStates;
+        footerButtonsLockStates = initGameDataSo.footerButtonsLockStates;
     }
 }
 

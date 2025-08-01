@@ -2092,12 +2092,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab571d9729bc4244aa86a4aff71a48f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _closeButton: {fileID: 771277227435931316}
   _soundToggleSlider: {fileID: 8707653705803535755}
   _musicToggleSlider: {fileID: 7350808366906241033}
   _vibrationToggleSlider: {fileID: 8432792729692361746}
   _notifToggleSlider: {fileID: 4218601272486593482}
   _languageButton: {fileID: 3118939798662534683}
-  _closeButton: {fileID: 771277227435931316}
+  _tncButton: {fileID: 7534260179491511270}
+  _privacyButton: {fileID: 4079434150652774500}
+  _supportButton: {fileID: 5218122930528445499}
 --- !u!1 &9127541995731107520
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,12 +3,17 @@ using UnityEngine;
 public interface IUIHomeScreenEventsListener
 {
     public void HandleSettingsButtonClicked();
-    public void HandleAddMoneyButtonClicked();
-    public void HandleHomeButtonClicked();
-    public void HandleShopButtonClicked();
-    public void HandleMapButtonClicked();
-    public void HandleLeftButtonClicked();
-    public void HandleRightButtonClicked();
+    public void HandleAddCoinsButtonClicked();
+    public void HandleHomeButtonClicked(bool isLocked, bool isSelected);
+    public void HandleShopButtonClicked(bool isLocked, bool isSelected);
+    public void HandleMapButtonClicked(bool isLocked, bool isSelected);
+    public void HandleLeftButtonClicked(bool isLocked, bool isSelected);
+    public void HandleRightButtonClicked(bool isLocked, bool isSelected);
+}
+
+public interface IUIPopupScreenEventsListener
+{
+    public void HandleCloseButtonClicked();
 }
 
 public interface IUISettingsScreenEventsListener
@@ -21,5 +26,4 @@ public interface IUISettingsScreenEventsListener
     public void HandleTermsAndConditionsButtonClicked();
     public void HandlePrivacyButtonClicked();
     public void HandleSupportButtonClicked();
-    public void HandleCloseButtonClicked();
 }

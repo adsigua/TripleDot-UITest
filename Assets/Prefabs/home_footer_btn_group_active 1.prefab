@@ -27,8 +27,8 @@ RectTransform:
   m_GameObject: {fileID: 457834775743457850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3286292816832645291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -169,10 +169,10 @@ RectTransform:
   - {fileID: 1001281592572064593}
   m_Father: {fileID: 3286292816832645291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3186985}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3247407333885094928
 CanvasRenderer:
@@ -209,8 +209,8 @@ RectTransform:
   m_GameObject: {fileID: 2250630013739296593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3286292816832645291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 1705495716882898463}
   - component: {fileID: 2749535189630811174}
   m_Layer: 5
-  m_Name: home_footer_btn_group_active
+  m_Name: home_footer_btn_group_active 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7251719288235231516}
+  m_TargetGraphic: {fileID: 619324059256346150}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -369,38 +369,11 @@ MonoBehaviour:
   _lockImage: {fileID: 8909131046698147045}
   _backgroundImage: {fileID: 619324059256346150}
   _grpText: {fileID: 7809192742013008329}
-  _animate: 1
-  _animationDuration: 0.3
+  _animate: 0
+  _animationDuration: 0.4
   _animationCuve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.5871553
-      outSlope: 0.5871553
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.27560976
-    - serializedVersion: 3
-      time: 0.92925596
-      value: 1.0954363
-      inSlope: 0.00000088855086
-      outSlope: 0.00000088855086
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.12167865
-      outWeight: 1
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -1.6526382
-      outSlope: -1.6526382
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 1
-      outWeight: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4

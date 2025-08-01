@@ -1,14 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UISettingsScreen : UIScreen
+public class UISettingsScreen : UIPopupScreen
 {
     [SerializeField] private UICustomToggleSlider _soundToggleSlider;
     [SerializeField] private UICustomToggleSlider _musicToggleSlider;
     [SerializeField] private UICustomToggleSlider _vibrationToggleSlider;
     [SerializeField] private UICustomToggleSlider _notifToggleSlider;
     [SerializeField] private Button _languageButton;
-    [SerializeField] private Button _closeButton;
+    [SerializeField] private Button _tncButton;
+    [SerializeField] private Button _privacyButton;
+    [SerializeField] private Button _supportButton;
     
     public override void InitScreen(UIScreenInitData uiScreenInitData)
     {
@@ -23,23 +25,39 @@ public class UISettingsScreen : UIScreen
 
     public override void RegisterEventsListener<T>(T objectListener)
     {
-        if(objectListener is not IUISettingsScreenEventsListener listener)
+        if (objectListener is not IUISettingsScreenEventsListener listener)
+        {
+            base.RegisterEventsListener(objectListener);
             return;
+        }
         _soundToggleSlider.OnToggleValueChanged += listener.HandleSoundToggleValueChanged;
         _musicToggleSlider.OnToggleValueChanged += listener.HandleMusicToggleValueChanged;
         _vibrationToggleSlider.OnToggleValueChanged += listener.HandleVibrationToggleValueChanged;
         _notifToggleSlider.OnToggleValueChanged += listener.HandleNotifToggleValueChanged;
-        _closeButton.onClick.AddListener(listener.HandleCloseButtonClicked);
+        
+        _tncButton.onClick.AddListener(listener.HandleTermsAndConditionsButtonClicked);
+        _privacyButton.onClick.AddListener(listener.HandlePrivacyButtonClicked);
+        _supportButton.onClick.AddListener(listener.HandleSupportButtonClicked);
+
+        base.RegisterEventsListener(objectListener);
     }
 
     public override void UnregisterEventsListener<T>(T objectListener)
     {
         if(objectListener is not IUISettingsScreenEventsListener listener)
+        {
+            base.UnregisterEventsListener(objectListener);
             return;
+        }
         _soundToggleSlider.OnToggleValueChanged -= listener.HandleSoundToggleValueChanged;
         _musicToggleSlider.OnToggleValueChanged -= listener.HandleMusicToggleValueChanged;
         _vibrationToggleSlider.OnToggleValueChanged -= listener.HandleVibrationToggleValueChanged;
         _notifToggleSlider.OnToggleValueChanged -= listener.HandleNotifToggleValueChanged;
-        _closeButton.onClick.RemoveAllListeners();
+        
+        _tncButton.onClick.RemoveAllListeners();
+        _privacyButton.onClick.RemoveAllListeners();
+        _supportButton.onClick.RemoveAllListeners();
+        
+        base.UnregisterEventsListener(objectListener);
     }
 }

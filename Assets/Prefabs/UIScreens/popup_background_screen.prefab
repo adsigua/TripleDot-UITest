@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 7626293061820656602}
   - component: {fileID: 3985819118818690896}
   m_Layer: 5
-  m_Name: popup_screen_base
+  m_Name: popup_background_screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
