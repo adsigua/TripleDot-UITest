@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2698263064143074028}
   - component: {fileID: 2577223809364620248}
   m_Layer: 5
-  m_Name: header_grp_settings_btn (1)
+  m_Name: footer_toggle_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 7730805122557424551}
   - component: {fileID: 573669669729636658}
   m_Layer: 5
-  m_Name: grp_txt
+  m_Name: level_complete_instruction_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,13 +722,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4529850998880698269}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.024580728, w: 0.99969786}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3941715262802449271}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.817}
   m_AnchorMin: {x: 0.5334331, y: 0.13264003}
   m_AnchorMax: {x: 0.81600004, y: 0.19433062}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -948,7 +948,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxScaleEntry: {x: 0, y: 1}
-    minMaxScalePulse: {x: 0.9, y: 1.1}
+    minMaxScalePulse: {x: 0.9, y: 1.15}
   _rotateData:
     duration: 0.5
     delay: 0
