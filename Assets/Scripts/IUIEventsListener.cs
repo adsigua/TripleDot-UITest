@@ -9,6 +9,7 @@ public interface IUIHomeScreenEventsListener
     public void HandleMapButtonClicked(bool isLocked, bool isSelected);
     public void HandleLeftButtonClicked(bool isLocked, bool isSelected);
     public void HandleRightButtonClicked(bool isLocked, bool isSelected);
+    public void HandleToggleFooterButtonClicked();
 }
 
 public interface IUIPopupScreenEventsListener
@@ -27,3 +28,10 @@ public interface IUISettingsScreenEventsListener
     public void HandlePrivacyButtonClicked();
     public void HandleSupportButtonClicked();
 }
+
+public interface IUILevelCompleteEventsListener
+{
+    public void HandleLevelCompleteHomeButtonClicked();
+    public void HandleLevelCompletePlayAdButtonClicked();
+}
+

@@ -7,7 +7,7 @@ public class UIScreenInitData
 
 public class UIHomeScreenInitData : UIScreenInitData
 {
-    public int moneyCount;
+    public int coinsCount;
     public int livesCount;
     public int maxLivesCount;
     public int starCount;
@@ -15,7 +15,7 @@ public class UIHomeScreenInitData : UIScreenInitData
 
     public void InitData()
     {
-        moneyCount = 300;
+        coinsCount = 300;
         livesCount = 5;
         maxLivesCount = 5;
         starCount = 8;
@@ -24,12 +24,19 @@ public class UIHomeScreenInitData : UIScreenInitData
     
     public void SetDataFromSO(InitGameDataSO initGameDataSo)
     {
-        moneyCount = initGameDataSo.coinsCount;
+        coinsCount = initGameDataSo.coinsCount;
         livesCount = initGameDataSo.livesCount;
         maxLivesCount = initGameDataSo.maxLivesCount;
         starCount = initGameDataSo.starCount;
         footerButtonsLockStates = initGameDataSo.footerButtonsLockStates;
     }
+}
+
+public class UILevelCompleteScreenInitData : UIScreenInitData
+{
+    public int starCount;
+    public int coinCount;
+    public int crownCount;
 }
 
 public class UISettingsScreenInitData : UIScreenInitData

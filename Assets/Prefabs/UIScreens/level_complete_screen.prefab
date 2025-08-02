@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1795826781207111408}
   - component: {fileID: 7515055795157537848}
   - component: {fileID: 1835240470997036165}
+  - component: {fileID: 7126835835982993787}
   m_Layer: 5
   m_Name: coin_txt
   m_TagString: Untagged
@@ -136,6 +137,164 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7126835835982993787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452234193576580698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 2
+  _animationType: 3
+  _totalDelay: 2.6
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.8
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 50
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 2
 --- !u!1 &489316905891623588
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,8 +306,9 @@ GameObject:
   - component: {fileID: 6368372801025212490}
   - component: {fileID: 2303746601888451165}
   - component: {fileID: 8226093948491200131}
+  - component: {fileID: 4281926639126395390}
   m_Layer: 5
-  m_Name: coin_txt
+  m_Name: crown_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 00de2803d8a21fa42b6448af9cccac23, type: 2}
   m_sharedMaterial: {fileID: 1473414908203039501, guid: 00de2803d8a21fa42b6448af9cccac23, type: 2}
@@ -272,6 +432,284 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4281926639126395390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489316905891623588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 2
+  _animationType: 3
+  _totalDelay: 2.7
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.8
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 50
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 2
+--- !u!1 &677833455490757976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6688427844986978611}
+  - component: {fileID: 7406413994112072701}
+  - component: {fileID: 2782090480224430900}
+  - component: {fileID: 1612078882094307286}
+  m_Layer: 5
+  m_Name: replay_anim_btn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6688427844986978611
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677833455490757976}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9996514, y: 0.9996514, z: 0.9996514}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48044089872028416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.79600006, y: 0.90400004}
+  m_AnchorMax: {x: 0.96587265, y: 0.9802642}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7406413994112072701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677833455490757976}
+  m_CullTransparentMesh: 1
+--- !u!114 &2782090480224430900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677833455490757976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a76c38b7c284b4d468d1a7cf54452b87, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1612078882094307286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677833455490757976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2782090480224430900}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &706417618707835485
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +721,7 @@ GameObject:
   - component: {fileID: 8069512842917542011}
   - component: {fileID: 6105817239055747621}
   - component: {fileID: 5183842597657199429}
-  - component: {fileID: 2967731297127142918}
+  - component: {fileID: 3761122022241955673}
   m_Layer: 5
   m_Name: fx_glow
   m_TagString: Untagged
@@ -348,7 +786,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2967731297127142918
+--- !u!114 &3761122022241955673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -357,361 +795,155 @@ MonoBehaviour:
   m_GameObject: {fileID: 706417618707835485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d6f0334fba0dd4cb356836753f8081, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 5183842597657199429}
-  _looping: 1
-  _stageTransitionDuration: 0.4
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 13
+  _totalDelay: 1.8
+  _stageTransitionDuration: 0.3
   _playOnEnable: 0
-  _spawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.6039216}
-        key2: {r: 0, g: 0, b: 0, a: 0.6039216}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 34695
-        atime2: 34695
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 0, g: 0, b: 0, a: 0}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 1, y: 1, z: 1}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _idleStageAnimations:
-    enabled: 1
-    stageDuration: 10
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 5
-      fullTime: 0
-      _currentAnimationValuePos: 0.502022
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.6040383}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.6117647}
-        key2: {r: 1, g: 1, b: 1, a: 0.6117647}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 65535
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 65535
-        atime2: 65535
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 4
-      fullTime: 0
-      _currentAnimationValuePos: 0.3551247
-      startScale: {x: 1, y: 1, z: 1}
-      endScale: {x: 1.1, y: 1.1, z: 1.1}
-      transitionScale: {x: 1, y: 1, z: 1}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 20
-      fullTime: 1
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 1
-      rotationAxis: {x: 0, y: 0, z: 1}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _despawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.6039216}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0}
-        key2: {r: 1, g: 0.8039216, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 3277
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 56669
-        atime2: 42598
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 0, y: 0, z: 0}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.4
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.8
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 0, y: 30}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &713984275649196683
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +954,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6025407207878902699}
   - component: {fileID: 3544833268348069652}
-  - component: {fileID: 2646301814452993117}
   m_Layer: 5
   m_Name: rewards_panel
   m_TagString: Untagged
@@ -759,32 +990,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713984275649196683}
   m_CullTransparentMesh: 1
---- !u!114 &2646301814452993117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713984275649196683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 300
-    m_Right: 300
-    m_Top: -95
-    m_Bottom: 0
-  m_ChildAlignment: 7
-  m_Spacing: 50
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 1
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &929388183199319147
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +1001,7 @@ GameObject:
   - component: {fileID: 7729909844027903470}
   - component: {fileID: 9051944384270245233}
   - component: {fileID: 1574389417401732861}
+  - component: {fileID: 6080802542557200546}
   m_Layer: 5
   m_Name: sparkles_fx
   m_TagString: Untagged
@@ -5631,6 +5837,65 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &6080802542557200546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929388183199319147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4de67eda70f17349b7d41d83b62f43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvents:
+  - eventName: PlayFX
+    eventDelay: 1.2
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 9051944384270245233}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: StopFX
+    eventDelay: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 9051944384270245233}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Stop
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 9051944384270245233}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Clear
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1381064901226871805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5641,8 +5906,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1049340082224687113}
   - component: {fileID: 486613203984626647}
+  - component: {fileID: 2408350060578277061}
   - component: {fileID: 8112061311801736819}
   - component: {fileID: 1585488424155077198}
+  - component: {fileID: 4776787705423023204}
   m_Layer: 5
   m_Name: play_add_btn
   m_TagString: Untagged
@@ -5666,10 +5933,10 @@ RectTransform:
   - {fileID: 8700474292030977266}
   m_Father: {fileID: 1305188212612539046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.3405185, y: 0.142}
+  m_AnchorMax: {x: 0.86670375, y: 0.85174835}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 563.6, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &486613203984626647
 CanvasRenderer:
@@ -5679,6 +5946,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381064901226871805}
   m_CullTransparentMesh: 1
+--- !u!225 &2408350060578277061
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381064901226871805}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &8112061311801736819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5753,6 +6032,173 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4776787705423023204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381064901226871805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 4
+  _totalDelay: 4
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9132322
+        value: 1.0094872
+        inSlope: 2.689136
+        outSlope: 2.689136
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.2030358
+      - serializedVersion: 3
+        time: 1.0030563
+        value: 1
+        inSlope: 3.2817452
+        outSlope: 3.2817452
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.22589397
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &1494549463704964301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,7 +6282,7 @@ GameObject:
   - component: {fileID: 7203955266910393703}
   - component: {fileID: 6976463288688127311}
   - component: {fileID: 4692978462572232418}
-  - component: {fileID: 8328466100776229282}
+  - component: {fileID: 3620503480067470048}
   m_Layer: 5
   m_Name: fx_rays (1)
   m_TagString: Untagged
@@ -5901,7 +6347,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8328466100776229282
+--- !u!114 &3620503480067470048
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5910,361 +6356,155 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511575840236489073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d6f0334fba0dd4cb356836753f8081, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 4692978462572232418}
-  _looping: 1
-  _stageTransitionDuration: 0.4
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 13
+  _totalDelay: 1.8
+  _stageTransitionDuration: 0.3
   _playOnEnable: 0
-  _spawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.8039216, b: 0, a: 0}
-        key1: {r: 1, g: 0.8039216, b: 0, a: 0.48235294}
-        key2: {r: 0, g: 0, b: 0, a: 0.927836}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 33731
-        atime2: 65535
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 0, g: 0, b: 0, a: 0}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 1, y: 1, z: 1}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _idleStageAnimations:
-    enabled: 1
-    stageDuration: 10
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 5
-      fullTime: 0
-      _currentAnimationValuePos: 0.502022
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.81568635, b: 0.07058824, a: 0.48235294}
-        key1: {r: 1, g: 0.81568635, b: 0.07058824, a: 0.6117647}
-        key2: {r: 1, g: 1, b: 1, a: 0.94117796}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 65535
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 65535
-        atime2: 65535
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 3.5
-      fullTime: 0
-      _currentAnimationValuePos: 0.3551247
-      startScale: {x: 1, y: 1, z: 1}
-      endScale: {x: 1.1, y: 1.1, z: 1.1}
-      transitionScale: {x: 1, y: 1, z: 1}
-    rotationAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 20
-      fullTime: 1
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 1
-      rotationAxis: {x: 0, y: 0, z: 1}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _despawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.8039216, b: 0, a: 0.48235294}
-        key1: {r: 1, g: 0.8039216, b: 0, a: 0}
-        key2: {r: 0, g: 0, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 56669
-        atime2: 42598
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 0, y: 0, z: 0}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.4
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.7
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 50, y: 0}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &1632690790895267348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6276,6 +6516,7 @@ GameObject:
   - component: {fileID: 5785975035617835468}
   - component: {fileID: 6946407119417059310}
   - component: {fileID: 4210468786750305146}
+  - component: {fileID: 1634478398210697481}
   m_Layer: 5
   m_Name: level_completed_txt_grp
   m_TagString: Untagged
@@ -6324,6 +6565,164 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1634478398210697481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632690790895267348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 3
+  _animationType: 3
+  _totalDelay: 0
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 1
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 1.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &1906501541748828902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6456,7 +6855,7 @@ GameObject:
   - component: {fileID: 8927443671655596290}
   - component: {fileID: 2652453778208234225}
   m_Layer: 5
-  m_Name: coin_img (1)
+  m_Name: crown_img_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6478,10 +6877,10 @@ RectTransform:
   - {fileID: 6368372801025212490}
   m_Father: {fileID: 6025407207878902699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.52418506, y: 0}
+  m_AnchorMax: {x: 0.70955557, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2652453778208234225
 CanvasRenderer:
@@ -6575,6 +6974,7 @@ GameObject:
   - component: {fileID: 2566375020667417794}
   - component: {fileID: 2388361762479759526}
   - component: {fileID: 2353820655469700249}
+  - component: {fileID: 1985197441595117518}
   m_Layer: 5
   m_Name: home_btn
   m_TagString: Untagged
@@ -6596,10 +6996,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1305188212612539046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.13422224, y: 0.142}
+  m_AnchorMax: {x: 0.323, y: 0.85174835}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2566375020667417794
 CanvasRenderer:
@@ -6683,6 +7083,173 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1985197441595117518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493705249532120310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 4
+  _totalDelay: 4
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9132322
+        value: 1.0094872
+        inSlope: 2.689136
+        outSlope: 2.689136
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.2030358
+      - serializedVersion: 3
+        time: 1.0030563
+        value: 1
+        inSlope: 3.2817452
+        outSlope: 3.2817452
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.22589397
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &2529460287003918988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6830,7 +7397,7 @@ GameObject:
   - component: {fileID: 319216064763475767}
   - component: {fileID: 4364017601120283772}
   - component: {fileID: 640613110130024094}
-  - component: {fileID: 9203469839675959497}
+  - component: {fileID: 9119860092834914599}
   m_Layer: 5
   m_Name: fx_rays (2)
   m_TagString: Untagged
@@ -6895,7 +7462,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &9203469839675959497
+--- !u!114 &9119860092834914599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6904,361 +7471,155 @@ MonoBehaviour:
   m_GameObject: {fileID: 2574285018563236398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d6f0334fba0dd4cb356836753f8081, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 640613110130024094}
-  _looping: 1
-  _stageTransitionDuration: 0.4
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 13
+  _totalDelay: 1.8
+  _stageTransitionDuration: 0.3
   _playOnEnable: 0
-  _spawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.7058824}
-        key2: {r: 0, g: 0, b: 0, a: 0.7058824}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 35852
-        atime2: 35852
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 0, g: 0, b: 0, a: 0}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 1, y: 1, z: 1}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _idleStageAnimations:
-    enabled: 1
-    stageDuration: 10
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 5
-      fullTime: 0
-      _currentAnimationValuePos: 0.502022
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.7058824}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.46666667}
-        key2: {r: 1, g: 1, b: 1, a: 0.94117796}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 65535
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 65535
-        atime2: 65535
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 3
-      fullTime: 0
-      _currentAnimationValuePos: 0.3551247
-      startScale: {x: 1, y: 1, z: 1}
-      endScale: {x: 1.1, y: 1.1, z: 1.1}
-      transitionScale: {x: 1, y: 1, z: 1}
-    rotationAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 25
-      fullTime: 1
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 1
-      rotationAxis: {x: 0, y: 0, z: 1}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
-  _despawnStageAnimations:
-    enabled: 1
-    stageDuration: 1
-    colorAnimation:
-      enabled: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 2
-          outSlope: 2
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 1
-      colorOverAnimationLifetime:
-        serializedVersion: 2
-        key0: {r: 1, g: 0.9647059, b: 0.8235294, a: 0.7058824}
-        key1: {r: 1, g: 0.9647059, b: 0.8235294, a: 0}
-        key2: {r: 1, g: 0.8039216, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
-        key6: {r: 0, g: 0, b: 0, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 3277
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
-        ctime7: 0
-        atime0: 0
-        atime1: 56669
-        atime2: 42598
-        atime3: 0
-        atime4: 0
-        atime5: 0
-        atime6: 0
-        atime7: 0
-        m_Mode: 0
-        m_ColorSpace: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
-      transitionColor: {r: 1, g: 1, b: 1, a: 0.927836}
-    scaleAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startScale: {x: 0, y: 0, z: 0}
-      endScale: {x: 0, y: 0, z: 0}
-      transitionScale: {x: 0, y: 0, z: 0}
-    rotationAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startRot: {x: 0, y: 0, z: 0}
-      endRot: {x: 0, y: 0, z: 0}
-      continuousRotation: 0
-      rotationAxis: {x: 0, y: 0, z: 0}
-      transitionRotation: {x: 0, y: 0, z: 0, w: 0}
-    positionAnimation:
-      enabled: 0
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      useNoise: 0
-      idleSpeed: 0
-      fullTime: 0
-      _currentAnimationValuePos: 0
-      startPos: {x: 0, y: 0, z: 0}
-      endPos: {x: 0, y: 0, z: 0}
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.4
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1.2
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0
+    delay: 0
+    loop: 1
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 0, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &3174955868399243179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7270,8 +7631,9 @@ GameObject:
   - component: {fileID: 7720682929625665901}
   - component: {fileID: 2463690522523995456}
   - component: {fileID: 6912728966692358455}
+  - component: {fileID: 8437944616955815887}
   m_Layer: 5
-  m_Name: coin_img (1)
+  m_Name: coin_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7334,6 +7696,164 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8437944616955815887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174955868399243179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 3
+  _totalDelay: 2.5
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.8
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 2
 --- !u!1 &3400537712327211197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7345,8 +7865,9 @@ GameObject:
   - component: {fileID: 810807016605641252}
   - component: {fileID: 2892209855912649955}
   - component: {fileID: 6504467891131563827}
+  - component: {fileID: 2951958793691066199}
   m_Layer: 5
-  m_Name: coin_img (1)
+  m_Name: crown_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7399,7 +7920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -778870009, guid: a6c1454d163af8440a9bd271f6908610, type: 3}
+  m_Sprite: {fileID: -1273844314, guid: a6c1454d163af8440a9bd271f6908610, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7409,6 +7930,164 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2951958793691066199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400537712327211197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 3
+  _totalDelay: 2.6
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.8
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 2
 --- !u!1 &3479422569066853867
 GameObject:
   m_ObjectHideFlags: 0
@@ -7419,6 +8098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48044089872028416}
   - component: {fileID: 2697716567499637764}
+  - component: {fileID: 3745122534046582313}
   m_Layer: 5
   m_Name: level_complete_screen
   m_TagString: Untagged
@@ -7444,6 +8124,7 @@ RectTransform:
   - {fileID: 2821467616432214964}
   - {fileID: 8637262281370819098}
   - {fileID: 3441951369358447479}
+  - {fileID: 6688427844986978611}
   - {fileID: 1305188212612539046}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7460,6 +8141,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3479422569066853867}
   m_CullTransparentMesh: 1
+--- !u!114 &3745122534046582313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3479422569066853867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62878b6a7481b6e42bceb9d5054eca91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animatedElements:
+  - {fileID: 1634478398210697481}
+  - {fileID: 3516974423542850621}
+  - {fileID: 1906180446877147828}
+  - {fileID: 8437944616955815887}
+  - {fileID: 7126835835982993787}
+  - {fileID: 2951958793691066199}
+  - {fileID: 4281926639126395390}
+  - {fileID: 1985197441595117518}
+  - {fileID: 4776787705423023204}
+  - {fileID: 3620503480067470048}
+  - {fileID: 9119860092834914599}
+  - {fileID: 3761122022241955673}
+  _customEventTriggers:
+  - {fileID: 6080802542557200546}
+  - {fileID: 1414875187019755567}
+  _homeButton: {fileID: 2353820655469700249}
+  _playAdButton: {fileID: 1585488424155077198}
+  _restartButton: {fileID: 1612078882094307286}
+  _starCountElement: {fileID: 1906180446877147828}
+  _coinCountElement: {fileID: 7126835835982993787}
+  _crownCountElement: {fileID: 4281926639126395390}
+  _hideScreenDelay: 0
 --- !u!1 &3510454183830986983
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,12 +8201,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3510454183830986983}
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -93.00004}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2821467616432214964}
+  m_Father: {fileID: 6389398059884819680}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12535,9 +13251,9 @@ RectTransform:
   - {fileID: 6333609565294964215}
   m_Father: {fileID: 1305188212612539046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 651.8, y: -140.70804}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 563.6, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8695343598448190681
@@ -12633,8 +13349,9 @@ GameObject:
   - component: {fileID: 8637262281370819098}
   - component: {fileID: 7582502161359451225}
   - component: {fileID: 2806802942132872873}
+  - component: {fileID: 1906180446877147828}
   m_Layer: 5
-  m_Name: score_txt
+  m_Name: star_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12758,6 +13475,164 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1906180446877147828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5361663876090879265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 2
+  _animationType: 3
+  _totalDelay: 2.4
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 1
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 1
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 3
 --- !u!1 &5974368042536842220
 GameObject:
   m_ObjectHideFlags: 0
@@ -12792,7 +13667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.87254864, y: 0.53000003}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 19.000015, y: 19.999996}
+  m_AnchoredPosition: {x: 18.99997, y: 19.999992}
   m_SizeDelta: {x: 48, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1899979470489157687
@@ -12919,8 +13794,9 @@ GameObject:
   - component: {fileID: 4377629461498848757}
   - component: {fileID: 3546663642829566535}
   - component: {fileID: 8606171630617314133}
+  - component: {fileID: 3516974423542850621}
   m_Layer: 5
-  m_Name: star_img (2)
+  m_Name: star_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12983,6 +13859,218 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3516974423542850621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344300366779311294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.09473368
+      outSlope: 0.09473368
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.7564255
+      value: 0.13292462
+      inSlope: 0.543529
+      outSlope: 0.543529
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04324406
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9727432
+      value: 1.0042331
+      inSlope: -3.7744656
+      outSlope: -3.7744656
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08770343
+      outWeight: 0.75367314
+    - serializedVersion: 3
+      time: 0.99328613
+      value: 1.0019226
+      inSlope: 1.6715999
+      outSlope: 1.6715999
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.80589676
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _elementType: 1
+  _animationType: 4
+  _totalDelay: 1.2
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 1
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: 0, y: 1}
+    slideDistance: 100
+  _scaleData:
+    duration: 0.8
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.09473368
+        outSlope: 0.09473368
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 1
+      - serializedVersion: 3
+        time: 0.7564255
+        value: 0.13292462
+        inSlope: 0.543529
+        outSlope: 0.543529
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.04324406
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9727432
+        value: 1.0042331
+        inSlope: -3.7744656
+        outSlope: -3.7744656
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.08770343
+        outWeight: 0.75367314
+      - serializedVersion: 3
+        time: 0.99328613
+        value: 1.0019226
+        inSlope: 1.6715999
+        outSlope: 1.6715999
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.80589676
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &6477826793979786484
 GameObject:
   m_ObjectHideFlags: 0
@@ -13130,6 +14218,7 @@ GameObject:
   - component: {fileID: 6389398059884819680}
   - component: {fileID: 2976396281340705540}
   - component: {fileID: 8153996829338328091}
+  - component: {fileID: 1414875187019755567}
   m_Layer: 5
   m_Name: sparkles_fx_loop
   m_TagString: Untagged
@@ -13148,7 +14237,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -93.00004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4416986466814724114}
   m_Father: {fileID: 2821467616432214964}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17965,6 +19055,65 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1414875187019755567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949680517297688182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4de67eda70f17349b7d41d83b62f43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvents:
+  - eventName: PlayFX
+    eventDelay: 2
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2976396281340705540}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: StopFX
+    eventDelay: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2976396281340705540}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Stop
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2976396281340705540}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Clear
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &7450848012898391967
 GameObject:
   m_ObjectHideFlags: 0
@@ -17975,7 +19124,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2821467616432214964}
   - component: {fileID: 8995812998980451176}
-  - component: {fileID: 3338874201893574753}
   m_Layer: 5
   m_Name: star_panel
   m_TagString: Untagged
@@ -17999,7 +19147,6 @@ RectTransform:
   - {fileID: 319216064763475767}
   - {fileID: 8069512842917542011}
   - {fileID: 6389398059884819680}
-  - {fileID: 4416986466814724114}
   - {fileID: 4377629461498848757}
   m_Father: {fileID: 48044089872028416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18016,18 +19163,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7450848012898391967}
   m_CullTransparentMesh: 1
---- !u!225 &3338874201893574753
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450848012898391967}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &7591989253572806292
 GameObject:
   m_ObjectHideFlags: 0
@@ -18038,7 +19173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1305188212612539046}
   - component: {fileID: 3010674722600984062}
-  - component: {fileID: 803414300877096924}
   m_Layer: 5
   m_Name: end_panel
   m_TagString: Untagged
@@ -18076,32 +19210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7591989253572806292}
   m_CullTransparentMesh: 1
---- !u!114 &803414300877096924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7591989253572806292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 150
-    m_Right: 150
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 20
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 1
-  m_ChildScaleHeight: 1
-  m_ReverseArrangement: 0
 --- !u!1 &9063338460938407396
 GameObject:
   m_ObjectHideFlags: 0
@@ -18113,7 +19221,7 @@ GameObject:
   - component: {fileID: 7738330573034018893}
   - component: {fileID: 7399276815688729491}
   m_Layer: 5
-  m_Name: coin_img
+  m_Name: coin_img_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18135,10 +19243,10 @@ RectTransform:
   - {fileID: 1795826781207111408}
   m_Father: {fileID: 6025407207878902699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.28844443, y: 0}
+  m_AnchorMax: {x: 0.47751853, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7399276815688729491
 CanvasRenderer:

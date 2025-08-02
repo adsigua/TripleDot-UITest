@@ -2012,6 +2012,7 @@ GameObject:
   - component: {fileID: 3012513285397109180}
   - component: {fileID: 1423050567282966133}
   - component: {fileID: 4626710822060694284}
+  - component: {fileID: 8367941879274448703}
   m_Layer: 5
   m_Name: popup_settings_screen
   m_TagString: Untagged
@@ -2092,6 +2093,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab571d9729bc4244aa86a4aff71a48f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animatedElements:
+  - {fileID: 8367941879274448703}
+  _customEventTriggers: []
+  _hideScreenDelay: 0.7
   _closeButton: {fileID: 771277227435931316}
   _soundToggleSlider: {fileID: 8707653705803535755}
   _musicToggleSlider: {fileID: 7350808366906241033}
@@ -2101,6 +2106,158 @@ MonoBehaviour:
   _tncButton: {fileID: 7534260179491511270}
   _privacyButton: {fileID: 4079434150652774500}
   _supportButton: {fileID: 5218122930528445499}
+--- !u!114 &8367941879274448703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9103111404015286021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbe1fd1c48e59047863819e0d0e8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _elementType: 0
+  _animationType: 2
+  _totalDelay: 0
+  _stageTransitionDuration: 0.3
+  _playOnEnable: 0
+  _fadeData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxAlphaEntry: {x: 0, y: 1}
+    minMaxAlphaPulse: {x: 0, y: 1}
+  _slideData:
+    duration: 0.7
+    delay: 0
+    loop: 0
+    hasExit: 1
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    slideDirection: {x: -1, y: 0}
+    slideDistance: 1080
+  _scaleData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxScaleEntry: {x: 0, y: 1}
+    minMaxScalePulse: {x: 0.95, y: 1.05}
+  _rotateData:
+    duration: 0.5
+    delay: 0
+    loop: 0
+    hasExit: 0
+    exitOnly: 0
+    loopCycleDuration: 0.5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minMaxRotationAngle: {x: 0, y: 40}
+    minMaxRotationAnglePulse: {x: 30, y: 40}
+  _targetCount: 0
+  _textDelay: 0
+  _textDuration: 10
 --- !u!1 &9127541995731107520
 GameObject:
   m_ObjectHideFlags: 0

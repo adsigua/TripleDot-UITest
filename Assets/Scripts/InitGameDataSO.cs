@@ -16,4 +16,8 @@ public class InitGameDataSO : ScriptableObject
     public bool vibrationOn = true;
     public bool notifsOn = true;
     public LanguageEnum languageIndex = 0;
+
+    public int rewardStarCount = 20;
+    public int rewardCoinCount = 100;
+    public int rewardCrownCount = 8;
 }

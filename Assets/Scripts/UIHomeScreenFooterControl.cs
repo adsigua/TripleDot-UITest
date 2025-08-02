@@ -15,13 +15,7 @@ public class UIHomeScreenFooterControl : MonoBehaviour
     private UIHomeScreenFooterButtonGroup _currentButtonGroup = null;
     private UIHomeScreenFooterButtonGroup _prevButtonGroup = null;
 
-    //index, isLocked, isSelected
     public event Action<int, bool, bool> OnFooterButtonGrpClicked;
-    // public event Action OnLeftActiveButtonClicked;
-    // public event Action OnShopActiveButtonClicked;
-    // public event Action OnHomeActiveButtonClicked;
-    // public event Action OnMapActiveButtonClicked;
-    // public event Action OnRightActiveButtonClicked;
     
     private void Start()
     {
@@ -72,6 +66,17 @@ public class UIHomeScreenFooterControl : MonoBehaviour
         if (index >= _footerButtonGroups.Count)
             return;
         _footerButtonGroups[index].SetLockState(value);
+    }
+
+    public void ClearFooterSelection()
+    {
+        if (_currentButtonGroup != null)
+        {
+            _currentButtonGroup.SetSelected(false, true);
+            _prevButtonGroup = null;
+            _currentButtonGroup = null;
+        }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_layoutGroupRectTransform);
     }
     
     private void HandleFooterButtonClick(UIHomeScreenFooterButtonGroup footerButtonGroup)

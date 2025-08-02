@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3121157494415492132}
   - component: {fileID: 2875660073394590779}
   m_Layer: 5
-  m_Name: tnc_header
+  m_Name: header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 7379080530074640048}
   - component: {fileID: 4041949215066499061}
   m_Layer: 5
-  m_Name: popup_tnc
+  m_Name: popup_bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 7756087947547836486}
   - component: {fileID: 616522703090049206}
   m_Layer: 5
-  m_Name: tnc_txt_box
+  m_Name: content_txt_box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,17 +593,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This is some random Terms and conditions I made up as a sample. But that's
-    boring so instead here are some cool facts about penguins:\\n\\n\u2022 In species
-    like the Ad\xE9lie penguin, some individuals have been observed faking chick
-    calls to trick adults into regurgitating food \u2014 then stealing it. Basically:
-    penguin scam artists.\\n\\n\u2022 Unlike adult penguins\u2019 squawky voices,
-    King penguin chicks make long, vibrating whistles that sound oddly electronic
-    \u2014 like a sci-fi movie sound effect. Researchers say it helps them stand
-    out in massive, noisy colonies.\\n\\n\u2022 Instead of waddling long distances,
-    penguins often lie flat and slide on their bellies, using their flippers and
-    feet to push forward. It\u2019s called tobogganing \u2014 and yes, it looks as
-    ridiculous and adorable as it sounds."
+  m_text: This is just some generic screen.\n\nYou can view the Level Completed Screen
+    by selecting the Map footer Button then clicking it again.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -642,7 +633,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: -8.2
   m_wordSpacing: 0
-  m_lineSpacing: -29.1
+  m_lineSpacing: -7.81
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -821,7 +812,7 @@ GameObject:
   - component: {fileID: 4073656956271482770}
   - component: {fileID: 5640591044533383185}
   m_Layer: 5
-  m_Name: tnc_content
+  m_Name: content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,6 +938,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63aa93b3650a2064a8a0f819b73566f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animatedElements: []
+  _customEventTriggers: []
+  _hideScreenDelay: 0
   _closeButton: {fileID: 771277227435931316}
   _backButton: {fileID: 5218122930528445499}
 --- !u!1 &9127541995731107520
@@ -961,7 +955,7 @@ GameObject:
   - component: {fileID: 7304217374283598933}
   - component: {fileID: 147265016792259053}
   m_Layer: 5
-  m_Name: tnc_header_txt
+  m_Name: header_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,7 +1008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Terms and\nConditions
+  m_text: Some Title
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d6df2be5bff81843a4ea9bcdc4327ab, type: 2}
   m_sharedMaterial: {fileID: 365534191802385234, guid: 9d6df2be5bff81843a4ea9bcdc4327ab, type: 2}
@@ -1041,7 +1035,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90.65
+  m_fontSize: 140
   m_fontSizeBase: 129.27
   m_fontWeight: 400
   m_enableAutoSizing: 1

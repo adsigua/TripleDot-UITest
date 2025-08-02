@@ -5,8 +5,6 @@ public abstract class UIPopupScreen : UIScreen
 {
     [SerializeField] protected Button _closeButton;
     
-    
-    
     public override void RegisterEventsListener<T>(T objectListener)
     {
         if(objectListener is not IUIPopupScreenEventsListener listener)
@@ -18,6 +16,6 @@ public abstract class UIPopupScreen : UIScreen
     {
         if(objectListener is not IUIPopupScreenEventsListener listener)
             return;
-        _closeButton.onClick.RemoveAllListeners();
+        _closeButton.onClick.RemoveListener(listener.HandleCloseButtonClicked);
     }
 }

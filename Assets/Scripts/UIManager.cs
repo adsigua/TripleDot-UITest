@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettingsScreenEventsListener, IUIPopupScreenEventsListener
+public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettingsScreenEventsListener, IUIPopupScreenEventsListener, IUILevelCompleteEventsListener
 {
     private enum UIScreenType
     {
-        Home, EndGame, Popup, Settings, TermsAndConditions
+        Home, EndGame, Popup, Settings, TermsAndConditions, AdPopup, Privacy, Language
     }
     
     [SerializeField] private RectTransform _rectTransform;    
@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
     [SerializeField] private InitGameDataSO _initGameDataSO;
     
     [SerializeField] private AudioManager _audioManager;
+    [SerializeField] private Camera _mainCamera;
 
     [SerializeField] private bool _vibrationOn, _notifsOn;
     
@@ -49,7 +50,7 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
         homeScreen.RegisterEventsListener(this);
         homeScreen.ShowScreen();
     }
-    
+
     private T GetUIScreen<T>(UIScreenType uiScreenType) where T : UIScreen
     {
         if (!_uiScreens.TryGetValue(uiScreenType, out var screen))
@@ -64,19 +65,35 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
     public void HandleSettingsButtonClicked()
     {
         _audioManager.PlaySFXOneShot(SFXType.CLICK);
-        OpenPopupBaseScreen();
+        OpenPopupBackgroundScreen();
         OpenSettingsScreen();
     }
 
-    private void OpenPopupBaseScreen()
+    private void OpenPopupBackgroundScreen()
     {
-        var popupScreen = GetUIScreen<UIPopupBaseScreen>(UIScreenType.Popup);
-        popupScreen.ShowScreen();
+        var backgroundScreen = GetUIScreen<UIPopupBackgroundScreen>(UIScreenType.Popup);
+        backgroundScreen.transform.SetAsLastSibling();
+        InitBackgroundScreen(backgroundScreen);
+        backgroundScreen.ShowScreen();
+    }
+
+    private void InitBackgroundScreen(UIPopupBackgroundScreen backgroundScreen)
+    {
+        if (!backgroundScreen.blurBackground)
+            return;
+        backgroundScreen.InitTexture();
+        var currRT = RenderTexture.active;
+        RenderTexture.active = backgroundScreen.screenCapTexture;
+        _mainCamera.targetTexture = backgroundScreen.screenCapTexture;
+        _mainCamera.Render();
+        _mainCamera.targetTexture = null;
+        RenderTexture.active = currRT;
+        backgroundScreen.BlurTexture();
     }
 
     private void ClosePopupBaseScreen()
     {
-        var popupScreen = GetUIScreen<UIPopupBaseScreen>(UIScreenType.Popup);
+        var popupScreen = GetUIScreen<UIPopupBackgroundScreen>(UIScreenType.Popup);
         popupScreen.UnregisterEventsListener(this);
         popupScreen.RegisterEventsListener(this);
         popupScreen.HideScreen();
@@ -95,8 +112,7 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
         _currentSettingsData.languageIndex = 0;
         
         settingsScreen.InitScreen(_currentSettingsData);
-        settingsScreen.RegisterEventsListener(this);
-        
+        //settingsScreen.RegisterEventsListener(this);
         OpenPopupScreen(settingsScreen);
     }
     
@@ -151,9 +167,30 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
             _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
             if (isSelected)
             {
-                Debug.LogWarning("Clicked Selected Map!");
+                OpenEndGameScreen();
             }
         }
+    }
+
+    private void OpenEndGameScreen()
+    {
+        var levelCompleteScreen = GetUIScreen<UILevelCompleteScreen>(UIScreenType.EndGame);
+        var levelCompleteInitData = new UILevelCompleteScreenInitData();
+        if (_initGameDataSO != null)
+        {
+            levelCompleteInitData.starCount = _initGameDataSO.rewardStarCount;
+            levelCompleteInitData.coinCount = _initGameDataSO.rewardCoinCount;
+            levelCompleteInitData.crownCount = _initGameDataSO.rewardCrownCount;
+        }
+        else
+        {
+            levelCompleteInitData.starCount = 20;
+            levelCompleteInitData.coinCount = 100;
+            levelCompleteInitData.crownCount = 8;
+        }
+        levelCompleteScreen.InitScreen(levelCompleteInitData);
+        levelCompleteScreen.RegisterEventsListener(this);
+        levelCompleteScreen.ShowScreen();
     }
 
     public void HandleLeftButtonClicked(bool isLocked, bool isSelected)
@@ -187,7 +224,13 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
             }
         }
     }
-#endregion
+    
+    public void HandleToggleFooterButtonClicked()
+    {
+        _audioManager.PlaySFXOneShot(SFXType.CLICK);
+    }
+
+    #endregion
     
 #region SettingsScreen Events
     public void HandleSoundToggleValueChanged(bool isOn)
@@ -218,29 +261,29 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
 
     public void HandleLanguageButtonClicked()
     {
-        throw new System.NotImplementedException();
+        _audioManager.PlaySFXOneShot(SFXType.CLICK);
+        var genericScreen = GetUIScreen<UIPopupGenericScreen>(UIScreenType.Language);
+        OpenPopupScreen(genericScreen);
     }
 
     public void HandleTermsAndConditionsButtonClicked()
     {
         _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
-        var tncScreen = GetUIScreen<UITermsAndConditionsScreen>(UIScreenType.TermsAndConditions) as UIPopupScreen;
-        if(tncScreen == null)
-            return;
-        tncScreen.RegisterEventsListener(this);
+        var tncScreen = GetUIScreen<UIPopupGenericScreen>(UIScreenType.TermsAndConditions);
         OpenPopupScreen(tncScreen);
     }
 
     public void HandlePrivacyButtonClicked()
     {
         _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
-        throw new System.NotImplementedException();
+        var genericScreen = GetUIScreen<UIPopupGenericScreen>(UIScreenType.Privacy);
+        OpenPopupScreen(genericScreen);
     }
 
     public void HandleSupportButtonClicked()
     {
         _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
-        throw new System.NotImplementedException();
+        Application.OpenURL("https://gentlepenguin.com/");
     }
 
     public void HandleCloseButtonClicked()
@@ -251,10 +294,10 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
 
     public void OpenPopupScreen(UIPopupScreen newPopupScreen)
     {
-        var popupScreenBase = GetUIScreen<UIPopupBaseScreen>(UIScreenType.Popup);
+        var popupScreenBase = GetUIScreen<UIPopupBackgroundScreen>(UIScreenType.Popup);
         if (!popupScreenBase.isShown)
         {
-            OpenPopupBaseScreen();
+            OpenPopupBackgroundScreen();
         }
         
         //hide current popupscreen
@@ -262,28 +305,51 @@ public class UIManager : MonoBehaviour, IUIHomeScreenEventsListener, IUISettings
         {
             var currentPopupScreen = _popupScreenStack.Peek();
             currentPopupScreen.UnregisterEventsListener(this);
-            currentPopupScreen.HideScreen();
+            currentPopupScreen.HideScreen(false);
         }
         
         _popupScreenStack.Push(newPopupScreen);
+        newPopupScreen.RegisterEventsListener(this);
         newPopupScreen.ShowScreen();
+        newPopupScreen.transform.SetAsLastSibling();
     }
     
     public void CloseCurrentPopupScreen()
     {
         var popupScreen = _popupScreenStack.Pop();
         popupScreen.UnregisterEventsListener(this);
-        popupScreen.HideScreen();
+        popupScreen.HideScreen(true, () =>
+        {
+            if (_popupScreenStack.Count > 0)
+            {
+                var nextPopupScreen = _popupScreenStack.Peek();
+                nextPopupScreen.RegisterEventsListener(this);
+                nextPopupScreen.ShowScreen(false);
+            }else if (_popupScreenStack.Count == 0)
+            {
+                ClosePopupBaseScreen();
+            }
+        });
+    }
+    
+#endregion
 
-        if (_popupScreenStack.Count > 0)
-        {
-            var nextPopupScreen = _popupScreenStack.Peek();
-            nextPopupScreen.RegisterEventsListener(this);
-            nextPopupScreen.ShowScreen();
-        }else if (_popupScreenStack.Count == 0)
-        {
-            ClosePopupBaseScreen();
-        }
+#region Level Complete Screen
+    public void HandleLevelCompleteHomeButtonClicked()
+    {
+        _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
+        var levelCompleteScreen = GetUIScreen<UILevelCompleteScreen>(UIScreenType.EndGame);
+        levelCompleteScreen.UnregisterEventsListener(this);
+        levelCompleteScreen.HideScreen();
+    }
+
+    public void HandleLevelCompletePlayAdButtonClicked()
+    {
+        _audioManager.PlaySFXOneShot(SFXType.CLICK_BLOOP);
+        var genericPopup = GetUIScreen<UIPopupGenericScreen>(UIScreenType.AdPopup) as UIPopupScreen;
+        if(genericPopup == null)
+            return;
+        OpenPopupScreen(genericPopup);
     }
     
 #endregion

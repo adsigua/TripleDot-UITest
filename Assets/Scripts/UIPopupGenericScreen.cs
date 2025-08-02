@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UITermsAndConditionsScreen : UIPopupScreen
+public class UIPopupGenericScreen : UIPopupScreen
 {
     [SerializeField] private Button _backButton;
     
@@ -17,7 +17,7 @@ public class UITermsAndConditionsScreen : UIPopupScreen
     {
         if(objectListener is not IUIPopupScreenEventsListener listener)
             return;
-        _closeButton.onClick.RemoveAllListeners();
-        _backButton.onClick.RemoveAllListeners();
+        _closeButton.onClick.RemoveListener(listener.HandleCloseButtonClicked);
+        _backButton.onClick.RemoveListener(listener.HandleCloseButtonClicked);
     }
 }
