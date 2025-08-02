@@ -38,6 +38,7 @@ public class UISettingsScreen : UIPopupScreen
         _tncButton.onClick.AddListener(listener.HandleTermsAndConditionsButtonClicked);
         _privacyButton.onClick.AddListener(listener.HandlePrivacyButtonClicked);
         _supportButton.onClick.AddListener(listener.HandleSupportButtonClicked);
+        _languageButton.onClick.AddListener(listener.HandleLanguageButtonClicked);
 
         base.RegisterEventsListener(objectListener);
     }
@@ -57,6 +58,7 @@ public class UISettingsScreen : UIPopupScreen
         _tncButton.onClick.RemoveAllListeners();
         _privacyButton.onClick.RemoveAllListeners();
         _supportButton.onClick.RemoveAllListeners();
+        _languageButton.onClick.RemoveAllListeners();
         
         base.UnregisterEventsListener(objectListener);
     }
